@@ -38,8 +38,8 @@ Evaluate the model using the test dataset and visualize the results (accuracy, c
 
 ## PROGRAM
 
-### Name : Mohammed Ibrahim MN 
-### Roll No : 212223100034
+### Name : KAVIBHARATHI K
+### Roll No : 212224220045
 
 <h3>EX. NO</h3> 1
 
@@ -153,8 +153,8 @@ def test_model(model, test_loader):
   plt.title("Confusion Matrix")
   plt.show()
 
-  print("Name: YOGESH.S")
-  print("Reg.no: 212224230311")
+  print("Name:Kavibharathi K")
+  print("Reg.no: 212224220045")
   print("Classification Report:")
   print(classification_report(all_labels, all_preds, target_names=[str(i) for i in range(10)]))
 test_model(model, test_loader)
@@ -169,8 +169,8 @@ def predict_image(model,image_index,dataset):
     output=model(image.unsqueeze(0))
     _,predicted=t.max(output,1)
   class_names=[str(i) for i in range(10)]
-  print("Name: YOGESH.S")
-  print("Reg.no: 212224230311")
+  print("Name: Kavibharathi K")
+  print("Reg.no: 212224220045")
   plt.imshow(image.cpu().squeeze(0),cmap='gray')
   plt.title(f"Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}")
   plt.axis("off")
@@ -183,22 +183,22 @@ predict_image(model,image_index=80,dataset=test_dataset)
 
 ## Training Loss per Epoch
 
-<img width="307" height="373" alt="image" src="https://github.com/user-attachments/assets/93d686ca-0964-48c1-a3c4-423ceaf8920c" />
+<img width="427" height="546" alt="Screenshot 2026-06-06 095917" src="https://github.com/user-attachments/assets/1816a864-3b02-4241-8f1b-396fffe1d41b" />
 
 
 ## Confusion Matrix
 
-<img width="936" height="782" alt="image" src="https://github.com/user-attachments/assets/93cb9b78-1689-4d0e-ac21-51e1e3ac448b" />
+<img width="1008" height="748" alt="Screenshot 2026-06-06 100029" src="https://github.com/user-attachments/assets/5fca520e-498e-4b86-8bf3-434cb79bde36" />
 
 
 ## Classification Report
 
-<img width="562" height="426" alt="image" src="https://github.com/user-attachments/assets/1c3c7c32-a6ca-4977-a673-63b50c2b1792" />
+<img width="516" height="335" alt="Screenshot 2026-06-06 100117" src="https://github.com/user-attachments/assets/691bfae5-e905-4c78-9ef5-9d8aa9976577" />
 
 
 ### New Sample Data Prediction
 
-<img width="545" height="642" alt="image" src="https://github.com/user-attachments/assets/46385454-ffdf-4914-802e-541b7556a265" />
+<img width="535" height="652" alt="Screenshot 2026-06-06 100215" src="https://github.com/user-attachments/assets/5fc7f0a4-71d4-4244-b1db-50b6f4e6b577" />
 
 
 ## RESULT
